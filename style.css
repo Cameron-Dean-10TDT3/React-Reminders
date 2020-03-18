@@ -1,12 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito|Roboto&display=swap');
 
-html {
-  background-image: linear-gradient(to bottom right, #71FF4F, #7095FA);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-
 body {
     /*background-color: #4EFD4D;*/
     font-family: 'Roboto', sans-serif;
