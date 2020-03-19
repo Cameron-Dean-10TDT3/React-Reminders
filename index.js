@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
-import Hello from './Hello';
 import './style.css';
 
 class App extends Component {
@@ -14,13 +13,10 @@ class App extends Component {
   render() {
     return (
       <div>
-      <body>
-        <Hello name={this.state.name} />
+        <h1>React Reminders</h1>
         <p>
           Start editing to see some magic happen :)
         </p>
-        
-      </body>
       </div>
     );
   }
