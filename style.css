@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito|Roboto&display=swap');
 
 body {
-    background-color: #4EFD4D;
+    /* background-color: #4EFD4D; */
     font-family: 'Roboto', sans-serif;
     background-image: linear-gradient(to bottom right, #71FF4F, #7095FA);
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
+    overflow: hidden;
 }
 
 h1 {
