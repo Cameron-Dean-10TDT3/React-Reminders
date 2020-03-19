@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
 import './style.css';
+import logo from 'images/logo.png'
 
 class App extends Component {
   constructor() {
@@ -17,6 +18,7 @@ class App extends Component {
         <p>
           Start editing to see some magic happen :)
         </p>
+        <img src={logo}></img>
       </div>
     );
   }
