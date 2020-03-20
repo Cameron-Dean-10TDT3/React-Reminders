@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { render } from "react-dom";
 import "./style.css";
-import logo from "https://ibb.co/mNz85nM"
 
 class App extends Component {
   constructor() {
@@ -14,9 +13,10 @@ class App extends Component {
   render() {
     return (
       <div>
-        <h1>React Reminders</h1>
-        <p>Start editing to see some magic happen :)</p>
-        <img src={logo}/>
+        <div className="title_screen">
+          <h1>React Reminders</h1>
+          <img src="https://i.ibb.co/BnsN2hS/logo.png"/>
+        </div>
       </div>
     );
   }

@@ -14,3 +14,14 @@ h1 {
     font-family: 'Nunito', sans-serif;
     text-align: center;
 }
+
+.title_screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  height: 100px;
+  width: 100px;
+}
