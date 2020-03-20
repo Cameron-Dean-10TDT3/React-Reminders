@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { render } from "react-dom";
 import "./style.css";
-import logo from "./images/logo.png"
+import logo from "https://ibb.co/mNz85nM"
 
 class App extends Component {
   constructor() {
