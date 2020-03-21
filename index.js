@@ -12,10 +12,13 @@ class App extends Component {
   
   render() {
     return (
-      <div>
-        <div className="title_screen">
-          <h1>React Reminders</h1>
+      <div className="titleScreen">
+        <h1>React Reminders</h1>
+        <div className="logo">
           <img src="https://i.ibb.co/BnsN2hS/logo.png"/>
+        </div>
+        <div className="btnPosition">
+          <button className="btn"><a href="./list.html">Continue</a></button>
         </div>
       </div>
     );
