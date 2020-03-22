@@ -1,26 +1,27 @@
 import React, { Component } from "react";
 import { render } from "react-dom";
-import "./style.css";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+
+import Home from "./components/Home";
+import List from "./components/List";
+import Add from "./components/Add";
+import Error from './components/Error';
+import Navigation from './components/Navigation';
 
 class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-      name: "Cameron"
-    };
-  }
-  
   render() {
     return (
-      <div className="titleScreen">
-        <h1>React Reminders</h1>
-        <div className="logo">
-          <img src="https://i.ibb.co/BnsN2hS/logo.png"/>
+      <BrowserRouter>
+        <div>
+          <Navigation />
+          <Switch>
+            <Route path="/" component={Home} exact />
+            <Route path="/List" component={List} />
+            <Route path="/Add" component={Add} />
+            <Route component={Error} />
+          </Switch>
         </div>
-        <div className="btnPosition">
-          <button className="btn"><a href="./list.html">Continue</a></button>
-        </div>
-      </div>
+      </BrowserRouter>
     );
   }
 }
