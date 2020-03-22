@@ -2,10 +2,16 @@ import React, { Component } from "react";
 import { render } from "react-dom";
 import "../../style.css";
 import { NavLink } from "react-router-dom";
+import Helmet from "react-helmet";
+
+const TITLE = 'Add a Reminder'
 
 const Add = () => {
   return (
     <div className="addScreen">
+      <Helmet>
+        <title>{TITLE}</title>
+      </Helmet>
       <h3>Reminder:</h3>
       <form>
         <label>
