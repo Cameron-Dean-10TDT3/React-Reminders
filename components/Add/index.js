@@ -81,7 +81,28 @@ class App extends Component {
               <button className="btn">Add Item</button>
             </form>
           </section>
-          
+          <section className="display-item">
+            <div className="wrapper">
+              <ul>
+                {this.state.items.map(item => {
+                  return (
+                    <li key={item.id}>
+                      <h3>{item.title}</h3>
+                      <p>
+                        brought by: {item.user}
+                        <button
+                          className="btn"
+                          onClick={() => this.removeItem(item.id)}
+                        >
+                          Remove Item
+                        </button>
+                      </p>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+          </section>
         </div>
       </div>
     );
