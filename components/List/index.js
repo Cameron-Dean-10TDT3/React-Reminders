@@ -4,7 +4,7 @@ import "../../style.css";
 import { NavLink } from "react-router-dom";
 import Helmet from "react-helmet";
 
-const TITLE = 'Reminders List'
+const TITLE = "Reminders List";
 
 const List = () => {
   return (
@@ -20,6 +20,28 @@ const List = () => {
           <button className="addButton">Tap here to add a new reminder</button>
         </NavLink>
       </div>
+      <section className="display-item">
+        <div className="wrapper">
+          <ul>
+            {this.state.items.map(item => {
+              return (
+                <li key={item.id}>
+                  <h3>{item.title}</h3>
+                  <p>
+                    brought by: {item.user}
+                    <button
+                      className="btn"
+                      onClick={() => this.removeItem(item.id)}
+                    >
+                      Remove Item
+                    </button>
+                  </p>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      </section>
     </div>
   );
 };
