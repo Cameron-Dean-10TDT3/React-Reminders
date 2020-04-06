@@ -70,22 +70,22 @@ class App extends Component {
             <form onSubmit={this.handleSubmit}>
               <input
                 type="text"
-                name="username"
-                placeholder="What's your name?"
-                onChange={this.handleChange}
-                value={this.state.username}
-              />
-              <input
-                type="text"
                 name="currentItem"
-                placeholder="What are you bringing?"
+                placeholder="Reminder"
                 onChange={this.handleChange}
                 value={this.state.currentItem}
               />
-              <button className="btn">Add Item</button>
+              <input
+                type="date"
+                name="username"
+                onChange={this.handleChange}
+                value={this.state.username}
+              />
+              <NavLink to="/List">
+                <button className="btn">Add Reminder</button>
+              </NavLink>
             </form>
           </section>
-          
         </div>
       </div>
     );

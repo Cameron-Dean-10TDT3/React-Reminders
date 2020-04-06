@@ -14,7 +14,7 @@ const Home = () => {
       </Helmet>
       <h1>React Reminders</h1>
       <div className="logo">
-        <img src="https://i.ibb.co/BnsN2hS/logo.png" />
+        <img src="https://i.ibb.co/BnsN2hS/logo.png" alt="React Reminders Logo" />
       </div>
       <div className="btnPosition">
         <NavLink to="/List">

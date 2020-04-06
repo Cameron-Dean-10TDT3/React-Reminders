@@ -81,7 +81,7 @@ class App extends Component {
                     <li key={item.id}>
                       <h3>{item.title}</h3>
                       <p>
-                        brought by: {item.user}
+                        Reminder Date: {item.user}
                         <button
                           className="btn"
                           onClick={() => this.removeItem(item.id)}
