@@ -74,17 +74,20 @@ class App extends Component {
                 placeholder="Reminder"
                 onChange={this.handleChange}
                 value={this.state.currentItem}
+                required
               />
               <input
                 type="date"
                 name="username"
                 onChange={this.handleChange}
                 value={this.state.username}
-              />
-              <NavLink to="/List">
-                <button className="btn">Add Reminder</button>
-              </NavLink>
+                />
+              <button className="btn">Add Reminder</button>
             </form>
+            <br/>
+            <NavLink to="/List">
+              <button className="btn">Return to List of Reminders</button>
+            </NavLink>
           </section>
         </div>
       </div>

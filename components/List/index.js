@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { ScrollView } from 'react-native';
 import { render } from "react-dom";
 import "../../style.css";
 import { NavLink } from "react-router-dom";
@@ -60,43 +61,45 @@ class App extends Component {
   }
   render() {
     return (
-      <div className="listScreen">
-        <Helmet>
-          <title>{TITLE}</title>
-        </Helmet>
-        <h3 className="instruction">
-          What would you like me to remind you about?
-        </h3>
-        <div className="btnPosition">
-          <NavLink to="/Add">
-            <button className="addButton">Tap here to add a new reminder</button>
-          </NavLink>
+      <ScrollView>
+        <div className="listScreen">
+          <Helmet>
+            <title>{TITLE}</title>
+          </Helmet>
+          <h3 className="instruction">
+            What would you like me to remind you about?
+          </h3>
+          <div className="btnPosition">
+            <NavLink to="/Add">
+              <button className="addButton">Tap here to add a new reminder</button>
+            </NavLink>
+          </div>
+          <div className="container">
+            <section className="display-item">
+              <div className="wrapper">
+                <ul>
+                  {this.state.items.map(item => {
+                    return (
+                      <li key={item.id}>
+                        <h3>{item.title}</h3>
+                        <p>
+                          Reminder Date: {item.user}
+                          <button
+                            className="btn"
+                            onClick={() => this.removeItem(item.id)}
+                          >
+                            Remove Item
+                          </button>
+                        </p>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
+            </section>
+          </div>
         </div>
-        <div className="container">
-          <section className="display-item">
-            <div className="wrapper">
-              <ul>
-                {this.state.items.map(item => {
-                  return (
-                    <li key={item.id}>
-                      <h3>{item.title}</h3>
-                      <p>
-                        Reminder Date: {item.user}
-                        <button
-                          className="btn"
-                          onClick={() => this.removeItem(item.id)}
-                        >
-                          Remove Item
-                        </button>
-                      </p>
-                    </li>
-                  );
-                })}
-              </ul>
-            </div>
-          </section>
-        </div>
-      </div>
+      </ScrollView>
     );
   };
 }

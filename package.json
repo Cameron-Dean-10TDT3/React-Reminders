@@ -3,12 +3,13 @@
   "version": "0.0.0",
   "private": true,
   "dependencies": {
-    "@firebase/app": "^0.6.0",
+    "@firebase/app": "0.6.0",
     "firebase": "7.12.0",
     "images": "3.0.2",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-helmet": "5.2.1",
+    "react-native": "^0.62.1",
     "react-router-dom": "5.1.2"
   },
   "scripts": {
