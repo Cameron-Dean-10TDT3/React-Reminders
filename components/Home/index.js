@@ -16,6 +16,9 @@ const Home = () => {
       <div className="logo">
         <img src="https://i.ibb.co/BnsN2hS/logo.png" alt="React Reminders Logo" />
       </div>
+      <br/>
+      <br/>
+      <br/>
       <div className="btnPosition">
         <NavLink to="/List">
           <button className="btn">Continue</button>

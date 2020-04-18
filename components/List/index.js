@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { ScrollView } from 'react-native';
 import { render } from "react-dom";
 import "../../style.css";
 import { NavLink } from "react-router-dom";
@@ -61,7 +60,6 @@ class App extends Component {
   }
   render() {
     return (
-      <ScrollView>
         <div className="listScreen">
           <Helmet>
             <title>{TITLE}</title>
@@ -88,7 +86,7 @@ class App extends Component {
                             className="btn"
                             onClick={() => this.removeItem(item.id)}
                           >
-                            Remove Item
+                            Reminder Complete
                           </button>
                         </p>
                       </li>
@@ -99,7 +97,6 @@ class App extends Component {
             </section>
           </div>
         </div>
-      </ScrollView>
     );
   };
 }
