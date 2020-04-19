@@ -8,7 +8,7 @@ import Add from '../Add';
 
 const TITLE = "Reminders List";
 
-class App extends Component {
+class List extends Component {
   constructor() {
     super();
     this.state = {
@@ -101,4 +101,4 @@ class App extends Component {
   };
 }
 
-export default App;
+export default List;

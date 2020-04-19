@@ -122,3 +122,17 @@ ul li:before {
   background-repeat: no-repeat;
   margin-right: 5px;
 }
+
+.display-item button {
+  margin-top: 20px;
+  margin-left: auto;
+  display: block;
+}
+
+p {
+  padding-left: 50px;
+}
+
+h3 {
+  padding-left: 50px;
+}

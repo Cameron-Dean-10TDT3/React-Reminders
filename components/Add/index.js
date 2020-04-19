@@ -7,7 +7,7 @@ import firebase from "../firebase.js";
 
 const TITLE = "Add a Reminder";
 
-class App extends Component {
+class Add extends Component {
   constructor() {
     super();
     this.state = {
@@ -94,4 +94,4 @@ class App extends Component {
     );
   }
 }
-export default App;
+export default Add;
