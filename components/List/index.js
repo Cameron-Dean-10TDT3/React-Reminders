@@ -4,7 +4,7 @@ import "../../style.css";
 import { NavLink } from "react-router-dom";
 import Helmet from "react-helmet";
 import firebase from "../firebase.js";
-import Add from '../Add';
+import Add from "../Add";
 
 const TITLE = "Reminders List";
 
@@ -60,45 +60,47 @@ class List extends Component {
   }
   render() {
     return (
-        <div className="listScreen">
-          <Helmet>
-            <title>{TITLE}</title>
-          </Helmet>
-          <h3 className="instruction">
-            What would you like me to remind you about?
-          </h3>
-          <div className="btnPosition">
-            <NavLink to="/Add">
-              <button className="addButton">Tap here to add a new reminder</button>
-            </NavLink>
-          </div>
-          <div className="container">
-            <section className="display-item">
-              <div className="wrapper">
-                <ul>
-                  {this.state.items.map(item => {
-                    return (
-                      <li key={item.id}>
-                        <h3>{item.title}</h3>
-                        <p>
-                          Reminder Date: {item.user}
-                          <button
-                            className="btn"
-                            onClick={() => this.removeItem(item.id)}
-                          >
-                            Complete
-                          </button>
-                        </p>
-                      </li>
-                    );
-                  })}
-                </ul>
-              </div>
-            </section>
-          </div>
+      <div className="listScreen">
+        <Helmet>
+          <title>{TITLE}</title>
+        </Helmet>
+        <h3 className="instruction">
+          What would you like me to remind you about?
+        </h3>
+        <div className="btnPosition">
+          <NavLink to="/Add">
+            <button className="addButton">
+              Tap here to add a new reminder
+            </button>
+          </NavLink>
         </div>
+        <div className="container">
+          <section className="display-item">
+            <div className="wrapper">
+              <ul>
+                {this.state.items.map(item => {
+                  return (
+                    <li key={item.id}>
+                      <h3>{item.title}</h3>
+                      <p>
+                        Reminder Date: {item.user}
+                        <button
+                          className="btn"
+                          onClick={() => this.removeItem(item.id)}
+                        >
+                          Complete
+                        </button>
+                      </p>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+          </section>
+        </div>
+      </div>
     );
-  };
+  }
 }
 
 export default List;
