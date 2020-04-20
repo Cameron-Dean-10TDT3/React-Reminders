@@ -86,7 +86,7 @@ class List extends Component {
                             className="btn"
                             onClick={() => this.removeItem(item.id)}
                           >
-                            Reminder Complete
+                            Complete
                           </button>
                         </p>
                       </li>
