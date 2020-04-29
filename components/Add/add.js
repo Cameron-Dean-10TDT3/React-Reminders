@@ -13,6 +13,7 @@ const Add = () => {
         <title>{TITLE}</title>
       </Helmet>
       <h3>Reminder:</h3>
+      // User inputs the information (reminder/s) which is displayed on the list page
       <form>
         <label>
           <input type="text" />

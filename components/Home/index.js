@@ -6,6 +6,7 @@ import Helmet from "react-helmet";
 
 const TITLE = 'Landing Page'
 
+// Page only displays when first opened as landing page, no real content
 const Home = () => {
   return (
     <div className="titleScreen">

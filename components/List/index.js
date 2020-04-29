@@ -78,6 +78,7 @@ class List extends Component {
           <section className="display-item">
             <div className="wrapper">
               <ul>
+                // Display reminders which have been inputed on the add page
                 {this.state.items.map(item => {
                   return (
                     <li key={item.id}>
