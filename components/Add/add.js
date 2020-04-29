@@ -4,7 +4,7 @@ import "../../style.css";
 import { NavLink } from "react-router-dom";
 import Helmet from "react-helmet";
 
-const TITLE = 'Add a Reminder'
+const TITLE = 'Add  Reminder'
 
 const Add = () => {
   return (

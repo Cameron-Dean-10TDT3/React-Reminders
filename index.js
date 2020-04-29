@@ -15,6 +15,7 @@ class App extends Component {
         <div>
           <Navigation />
           <Switch>
+            // So the links of the buttons work as expected
             <Route path="/" component={Home} exact />
             <Route path="/List" component={List} />
             <Route path="/Add" component={Add} />
