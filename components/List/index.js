@@ -81,7 +81,7 @@ class List extends Component {
                 {/* Display reminders which have been inputed on the add page */}
                 {this.state.items.map(item => {
                   return (
-                    <li key={item.id}>
+                    <li key={item.id} title="React Reminders Logo">
                       <h3>{item.title}</h3>
                       <p>
                         Reminder Date: {item.user}
