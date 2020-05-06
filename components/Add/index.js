@@ -68,6 +68,7 @@ class Add extends Component {
         <div className="container">
           <section className="add-item">
             <form onSubmit={this.handleSubmit}>
+            {/* User reminder text input */}
               <input
                 type="text"
                 name="currentItem"
@@ -76,6 +77,7 @@ class Add extends Component {
                 value={this.state.currentItem}
                 required
               />
+              {/* User reminder date input */}
               <input
                 type="date"
                 name="username"
